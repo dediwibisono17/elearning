@@ -6,7 +6,8 @@ $biru: #0074BF;
 @import 'gsap';
 header {
     height: 80px;
-    background-color: #4e8590;
+    // background-color: #4e8590;
+    background: $biru;
     .image {
         position: absolute;
         width: 240px;
@@ -25,8 +26,8 @@ header {
 
 section{
     overflow-x: hidden;
-    background-color: #4e8590;
-    // background: $biru;
+    // background-color: #4e8590;
+    background: $biru;
 
 }
 
@@ -42,7 +43,7 @@ section{
         left: 0;
         right: 0;
         height: 200px;
-        background: linear-gradient(to top, #4e8590, transparent);
+        background: linear-gradient(to top, $biru, transparent);
     }
     .texting {
         position: absolute;
@@ -223,6 +224,7 @@ section{
     background: linear-gradient(to left, white, #ccc);
     font-size: 1rem;
     border-radius: 0;
+    border-radius: 4px;
     outline: 0;
     border: 1px solid transparent;
     padding: 8px;
@@ -266,19 +268,21 @@ section{
         }
         .card {
             width: 30%;
+            border-radius: 8px;
             display: inline-block;
             margin: 8px 12px;
-            background: linear-gradient(to bottom, $biru, rgb(199, 199, 199));
-            // border: 1px solid #dadada;
-            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+            background: linear-gradient(to top, #0899ff, #caecff);
+            box-shadow: rgb(0 0 0 / 12%) 0px 1px 3px, rgb(0 0 0 / 24%) 0px 1px 2px;
             @media screen and (max-width:766px) {
                 width: auto;
             }
             .image {
                 width: 100%;
                 height: auto;
+                border-radius: 8px 8px 0 0;
                 img {
                     width: 100%;
+                    border-radius: 8px 8px 0 0;
                     height: 100%;
                     object-fit: contain;
                 }
