@@ -235,6 +235,8 @@ section{
     cursor: pointer;
     &:hover {
         // background: #ececec;
+        // background: linear-gradient(to left, white, #fff);
+        border: 1px solid $biru;
         color: $biru;
     }
 }
