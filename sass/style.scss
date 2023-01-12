@@ -277,7 +277,10 @@ section{
         color: $biru;
     }
 }
-
+.totop {
+    position: relative;
+    z-index: 44;
+}
 .materi {
     padding: 32px 0;
     position: relative;
