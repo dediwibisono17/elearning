@@ -272,6 +272,9 @@ section{
         font-weight: bold;
         margin: 0 auto;
         padding: 8px 16px;
+        @media screen and (max-width:766px) {
+            font-size: 1.7rem;
+        }
     }
     .content {
         width: 860px;
@@ -279,6 +282,7 @@ section{
         color: white;
         @media screen and (max-width:766px) {
             width: auto;
+            margin: 8px 12px;
         }
     }
 }
