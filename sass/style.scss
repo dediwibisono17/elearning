@@ -316,6 +316,8 @@ footer {
     small {
         font-style: italic;
         color: white;
+        position: relative;
+        z-index: 9;
         a {
             color: white;
             &:hover {
@@ -325,6 +327,8 @@ footer {
     }
     .data-bottom {
         margin-top: 8px;
+        position: relative;
+        z-index: 9;
         ul {
             margin: 0;
             padding: 0;
