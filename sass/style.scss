@@ -219,6 +219,89 @@ section{
     }
 }
 
+.btn-primary {
+    background: linear-gradient(to left, white, #ccc);
+    font-size: 1rem;
+    border-radius: 0;
+    outline: 0;
+    border: 1px solid transparent;
+    padding: 8px;
+    margin-top: 8px;
+    width: 100%;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    color: #222;
+    transition: .3s;
+    cursor: pointer;
+    &:hover {
+        // background: #ececec;
+        color: $biru;
+    }
+}
+
+.materi {
+    padding: 32px 0;
+    h2 {
+        color: $biru;
+        transform: rotate(-3deg);
+        font-size: 2.2rem;
+        background: $hijau;
+        width: fit-content;
+        font-weight: bold;
+        margin: 0 auto;
+        padding: 8px 16px;
+    }
+    p {
+        color: #fff;
+    }
+    .wrap {
+        width: 960px;
+        margin: 16px auto;
+        display: block;
+        @media screen and (max-width:766px) {
+            width: auto;
+            margin: 8px;
+        }
+        .card {
+            width: 30%;
+            display: inline-block;
+            margin: 8px 12px;
+            background: linear-gradient(to bottom, $biru, rgb(199, 199, 199));
+            // border: 1px solid #dadada;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+            @media screen and (max-width:766px) {
+                width: auto;
+            }
+            .image {
+                width: 100%;
+                height: auto;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+            .judul {
+                font-weight: bold;
+                color: black;
+                // text-shadow: 1px 1px $biru;
+                // margin: 8px 0;
+                margin-bottom: 4px;
+                font-size: 1.5rem;
+
+            }
+            .kotak {
+                // border: 1px solid;
+                padding: 16px 8px;
+            }
+            .paragraph {
+                color: #111;
+                font-size: .875rem;
+            }
+        }
+    }
+}
+
 .install {
     padding: 32px 0;
     h2 {
