@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Rubik&display=swap');
+@import 'init';
+
+section {
+    min-height: 100vh;
+}
+
+$hijau: #e9e99b;
+$biru: #0074BF;
+
+.banner {
+    background: #e2f3f9;
+    position: relative;
+
+    .wraps {
+        display: block;
+        width: 80vw;
+        margin: 0 auto;
+        height: 100vh;
+        position: relative;
+    }
+
+    .hape {
+        position: absolute;
+        left: 16px;
+        top: 32px;
+        width: 520px;
+        animation: MoveUpDown 2.3s linear infinite;
+        height: auto;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .hape2 {
+        position: absolute;
+        left: 16px;
+        bottom: -32px;
+        width: 520px;
+        height: auto;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    @keyframes MoveUpDown {
+
+        0%,
+        100% {
+            left: 16px;
+        }
+
+        50% {
+            left: 32px;
+        }
+    }
+
+    .headline {
+        position: absolute;
+        right: 10%;
+        top: 42px;
+        width: 35%;
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 0;
+            color: $biru;
+        }
+    }
+}
