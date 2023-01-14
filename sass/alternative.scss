@@ -9,15 +9,49 @@ $hijau: #e9e99b;
 $biru: #0074BF;
 
 .banner {
-    background: #e2f3f9;
+
     position: relative;
+    // overflow: hidden;
+
+    .hehe {
+        background: rgba(#e2f3f9, .7);
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        right: 0;
+        // overflow: hidden;
+        top: 0;
+        bottom: 0;
+    }
 
     .wraps {
         display: block;
+        // background: rgba(#e2f3f9, .7);
         width: 80vw;
+        // transform: translate();
         margin: 0 auto;
         height: 100vh;
-        position: relative;
+        position: absolute;
+        transform: translate(15%, 0%);
+    }
+
+    .bgbg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        filter: blur(3px);
+        bottom: 0;
+        right: 0;
+        // overflow: hidden;
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 
     .hape {
@@ -71,6 +105,80 @@ $biru: #0074BF;
             font-size: 3.5rem;
             margin-bottom: 0;
             color: $biru;
+        }
+    }
+}
+
+.usp {
+    padding: 32px 0;
+    min-height: auto;
+
+    &-icon {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &-text {
+        text-align: center;
+        // font-weight: 600;
+        color: #222;
+
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+.function {
+    background: #f7f7f7;
+    padding: 32px 0;
+    position: relative;
+    overflow: hidden;
+
+    .wrap {
+        display: block;
+        // background: rgba(#e2f3f9, .7);
+        width: 80vw;
+        // transform: translate();
+        margin: 0 auto;
+        height: 100vh;
+        position: absolute;
+        transform: translate(15%, 0%);
+
+        .hape {
+            position: absolute;
+            left: 16px;
+            top: 32px;
+            width: 520px;
+            // animation: MoveUpDown 2.3s linear infinite;
+            height: auto;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .caranya {
+            position: absolute;
+            right: 10%;
+            top: 42px;
+            width: 35%;
+
+            h2 {
+                font-size: 3.5rem;
+                margin-bottom: 0;
+                color: $biru;
+            }
         }
     }
 }
