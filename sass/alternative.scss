@@ -62,6 +62,10 @@ $biru: #0074BF;
         animation: MoveUpDown 2.3s linear infinite;
         height: auto;
 
+        @media screen and (max-width:766px) {
+            width: 70vw;
+        }
+
         img {
             width: 100%;
             height: 100%;
@@ -75,6 +79,12 @@ $biru: #0074BF;
         bottom: -32px;
         width: 520px;
         height: auto;
+
+        @media screen and (max-width:766px) {
+            width: 70vw;
+            bottom: initial;
+            top: 15vh;
+        }
 
         img {
             width: 100%;
@@ -101,10 +111,20 @@ $biru: #0074BF;
         top: 42px;
         width: 35%;
 
+        @media screen and (max-width:766px) {
+            transform: translate(0, 0);
+            width: 100%;
+            top: 50vh;
+        }
+
         h1 {
             font-size: 3.5rem;
             margin-bottom: 0;
             color: $biru;
+
+            @media screen and (max-width:766px) {
+                font-size: 3rem;
+            }
         }
     }
 }
@@ -113,11 +133,19 @@ $biru: #0074BF;
     padding: 32px 0;
     min-height: auto;
 
+
     &-icon {
         width: 50%;
         margin: 0 auto;
         text-align: center;
         display: block;
+
+        @media screen and (max-width:766px) {
+            width: 25%;
+            margin: 0 auto;
+            text-align: center;
+            display: inline-block;
+        }
 
         img {
             width: 100%;
@@ -130,6 +158,14 @@ $biru: #0074BF;
         text-align: center;
         // font-weight: 600;
         color: #222;
+
+        @media screen and (max-width:766px) {
+            display: inline-block;
+            text-align: left;
+            width: 65%;
+            vertical-align: top;
+            margin: 0 0 8px 12px;
+        }
 
         p {
             font-size: 14px;
