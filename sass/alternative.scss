@@ -197,6 +197,12 @@ $biru: #0074BF;
             // animation: MoveUpDown 2.3s linear infinite;
             height: auto;
 
+            @media screen and (max-width:766px) {
+                top: 32px;
+                width: 100%;
+                height: auto;
+            }
+
             img {
                 width: 100%;
                 height: 100%;
@@ -210,10 +216,27 @@ $biru: #0074BF;
             top: 42px;
             width: 35%;
 
+            @media screen and (max-width:766px) {
+                width: 100%;
+                top: 45vh;
+            }
+
+            li {
+                font-weight: 200;
+                color: #222;
+            }
+
             h2 {
                 font-size: 3.5rem;
                 margin-bottom: 0;
                 color: $biru;
+                margin-bottom: 16px;
+
+                @media screen and (max-width:766px) {
+                    margin-bottom: 4px;
+                    margin-top: 16px;
+                    font-size: 1.75rem;
+                }
             }
         }
     }
