@@ -2,7 +2,7 @@
 @import 'init';
 
 section {
-    min-height: 100vh;
+    // min-height: 100vh;
 }
 
 $hijau: #e9e99b;
@@ -11,6 +11,7 @@ $biru: #0074BF;
 .banner {
 
     position: relative;
+    min-height: 100vh;
     // overflow: hidden;
 
     .hehe {
@@ -178,9 +179,10 @@ $biru: #0074BF;
     padding: 32px 0;
     position: relative;
     overflow: hidden;
-
+    min-height: 80vh;
     .wrap {
         display: block;
+        background: #f7f7f7;
         // background: rgba(#e2f3f9, .7);
         width: 80vw;
         // transform: translate();
@@ -227,7 +229,7 @@ $biru: #0074BF;
             }
 
             h2 {
-                font-size: 3.5rem;
+                font-size: 2rem;
                 margin-bottom: 0;
                 color: $biru;
                 margin-bottom: 16px;
@@ -239,5 +241,48 @@ $biru: #0074BF;
                 }
             }
         }
+    }
+}
+
+.download {
+    padding: 32px 0;
+    
+    h2 {
+        color: $biru;
+        font-size: 2rem;
+    }
+
+    .imagess {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        .app {
+            display: inline-block;
+            width: 40%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+    .hp {
+        width: 100%;
+        margin-top: 24px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+.screenshoot {
+    background: #f7f7f7;
+    padding: 32px 0;
+    h2 {
+        color: $biru;
+        font-size: 2rem;
     }
 }
