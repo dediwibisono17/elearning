@@ -170,6 +170,9 @@ header {
         left: 16px;
         top: 16px;
         z-index: 9;
+        @media screen and (max-width:766px) {
+            width: 130px;
+        }
 
         img {
             width: 100%;
