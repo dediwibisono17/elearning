@@ -3,6 +3,11 @@
 
 section {
     // min-height: 100vh;
+    padding: 42px 0;
+
+    @media screen and (max-width:766px) {
+        padding: 24px 0;
+    }
 }
 
 $hijau: #e9e99b;
@@ -131,7 +136,7 @@ $biru: #0074BF;
 }
 
 .usp {
-    padding: 32px 0;
+
     min-height: auto;
 
 
@@ -176,7 +181,7 @@ $biru: #0074BF;
 
 .function {
     background: #f7f7f7;
-    padding: 32px 0;
+
     position: relative;
     overflow: hidden;
     min-height: 80vh;
@@ -250,7 +255,7 @@ $biru: #0074BF;
 }
 
 .download {
-    padding: 32px 0;
+
 
     h2 {
         color: $biru;
@@ -288,11 +293,19 @@ $biru: #0074BF;
 
 .screenshoot {
     background: #f7f7f7;
-    padding: 32px 0;
+
 
     h2 {
         color: $biru;
         font-size: 2rem;
+    }
+
+    .autoplay {
+        margin-top: 32px;
+
+        @media screen and (max-width:766px) {
+            margin-top: 16px;
+        }
     }
 
     .images {
