@@ -30,8 +30,9 @@ $('.autoplay').slick({
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToShow: 1.05,
+        slidesToScroll: 1,
+        centerMode: true
       }
     }
     // You can unslick at a given breakpoint now by adding:
