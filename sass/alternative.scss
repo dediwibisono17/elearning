@@ -180,6 +180,11 @@ $biru: #0074BF;
     position: relative;
     overflow: hidden;
     min-height: 80vh;
+
+    @media screen and (max-width:766px) {
+        min-height: 100vh;
+    }
+
     .wrap {
         display: block;
         background: #f7f7f7;
@@ -246,7 +251,7 @@ $biru: #0074BF;
 
 .download {
     padding: 32px 0;
-    
+
     h2 {
         color: $biru;
         font-size: 2rem;
@@ -256,9 +261,11 @@ $biru: #0074BF;
         display: block;
         margin: 0 auto;
         text-align: center;
+
         .app {
             display: inline-block;
             width: 40%;
+
             img {
                 width: 100%;
                 height: 100%;
@@ -270,6 +277,7 @@ $biru: #0074BF;
     .hp {
         width: 100%;
         margin-top: 24px;
+
         img {
             width: 100%;
             height: 100%;
@@ -281,8 +289,20 @@ $biru: #0074BF;
 .screenshoot {
     background: #f7f7f7;
     padding: 32px 0;
+
     h2 {
         color: $biru;
         font-size: 2rem;
+    }
+
+    .images {
+        width: auto;
+        height: 420px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
     }
 }
