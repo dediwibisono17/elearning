@@ -269,7 +269,16 @@ $biru: #0074BF;
 
         .app {
             display: inline-block;
-            width: 40%;
+            width: 20%;
+            transition: .3s;
+
+            &:hover {
+                opacity: .7;
+            }
+
+            @media screen and(max-width:766px) {
+                width: 40%;
+            }
 
             img {
                 width: 100%;
