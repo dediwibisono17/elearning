@@ -40,3 +40,9 @@ $('.autoplay').slick({
     // instead of a settings object
   ]
 });
+
+$(".toapp").click(function() {
+  $('html, body').animate({
+      scrollTop: $(".download").offset().top
+  }, 500);
+});
