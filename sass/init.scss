@@ -89,6 +89,46 @@ footer {
     margin: 0;
     position: relative;
 
+    .alamat {
+        // text-align: center;
+        color: white;
+        margin: 4px auto;
+        position: relative;
+        z-index: 32;
+        // width: 360px;
+
+        @media screen and (max-width:766px) {
+            width: auto;
+        }
+
+        .icons {
+            width: 32px;
+            height: 32px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-bottom: 8px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .jalan {
+            display: inline-block;
+            width: 75%;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+    }
+
+    .color-hijau {
+        font-size: 20px;
+        margin-top: 8px;
+        margin-bottom: 24px;
+    }
+
     .sosmed {
         display: block;
         position: relative;
@@ -96,13 +136,18 @@ footer {
         text-align: center;
         z-index: 22;
         transition: .3s;
+
+
+
         &__icon {
             display: inline-block;
-            width: 50px;
+            width: 42px;
             margin: 4px 8px;
+
             &:hover {
                 opacity: .7;
             }
+
             img {
                 width: 100%;
                 height: 100%;
@@ -128,9 +173,9 @@ footer {
     }
 
     .logox {
-        width: 240px;
+        width: 180px;
         height: auto;
-        margin: 0 auto;
+        // margin: 0 auto;
         position: relative;
         z-index: 9;
 
@@ -171,16 +216,30 @@ footer {
                 margin: 4px 8px;
 
                 a {
-                    color: white;
+                    color: #ccc;
                     text-decoration: none;
                     font-family: 'Poppins';
 
                     &:hover {
-                        color: #dadada;
+                        color: #fff;
                     }
                 }
             }
         }
+    }
+}
+
+.normal {
+    font-style: normal;
+}
+
+.color {
+    &-white {
+        color: white;
+    }
+
+    &-hijau {
+        color: $hijau;
     }
 }
 
@@ -192,6 +251,7 @@ header {
         left: 16px;
         top: 16px;
         z-index: 9;
+
         @media screen and (max-width:766px) {
             width: 130px;
         }
