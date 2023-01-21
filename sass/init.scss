@@ -89,6 +89,28 @@ footer {
     margin: 0;
     position: relative;
 
+    .sosmed {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        z-index: 22;
+        transition: .3s;
+        &__icon {
+            display: inline-block;
+            width: 50px;
+            margin: 4px 8px;
+            &:hover {
+                opacity: .7;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
     .bulet {
         position: absolute;
         right: 0;
