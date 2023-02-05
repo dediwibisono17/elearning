@@ -189,6 +189,9 @@ $biru: #0074BF;
         border-color: transparent;
         position: relative;
         height: 240px;
+        @media screen and (max-width:766px) {
+            height: 360px;
+        }
         .details {
             position: absolute;
             bottom: 8px;
@@ -202,10 +205,16 @@ $biru: #0074BF;
                 text-align: right;
             }
             .img {
-                width: 42px;
+                width: 92px;
                 position: absolute;
                 height: 42px;
-                left: -56px;
+                right: 32px;
+                bottom: 50px;
+                height: 92px;
+                @media screen and (max-width:766px) {
+                    width: 42px;
+                    height: 42px;
+                }
                 img {
                     width: 100%;
                     height: 100%;
@@ -479,3 +488,44 @@ $biru: #0074BF;
     }
 }
 
+
+.static {
+    padding: 32px 0;
+
+    h2 {
+        color: $biru;
+        // transform: rotate(-3deg);
+        font-size: 2.2rem;
+        // background: $hijau;
+        width: fit-content;
+        font-weight: bold;
+        margin: 0 auto;
+        padding: 8px 16px;
+
+        @media screen and (max-width:766px) {
+            font-size: 1.7rem;
+        }
+    }
+
+    .content {
+        width: 860px;
+        margin: 24px auto;
+        color: white;
+
+        @media screen and (max-width:766px) {
+            width: auto;
+            margin: 8px 12px;
+        }
+    }
+}
+
+header {
+    .image {
+        width: 200px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}

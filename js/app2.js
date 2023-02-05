@@ -30,7 +30,7 @@ $('.autoplay').slick({
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 1.05,
+        slidesToShow: 1,
         slidesToScroll: 1,
         centerMode: true
       }

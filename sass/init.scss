@@ -64,11 +64,17 @@ h2 {
 /* the slides */
 .slick-slide {
     margin: 0 27px;
+    @media screen and (max-width:766px) {
+        margin: 0 8px;
+    }
 }
 
 /* the parent */
 .slick-list {
     margin: 0 -27px;
+    @media screen and (max-width:766px) {
+        margin: 0 -8px;
+    }
 }
 
 .slick-dots {
