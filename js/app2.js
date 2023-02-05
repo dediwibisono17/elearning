@@ -4,7 +4,7 @@ $(document).ready(function () {
 
 
 $('.autoplay').slick({
-  slidesToShow: 4,
+  slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
   dots: true,
@@ -14,7 +14,7 @@ $('.autoplay').slick({
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
         dots: true
@@ -23,7 +23,7 @@ $('.autoplay').slick({
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 2
       }
     },
