@@ -1,175 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=PT+Serif&family=Rubik&display=swap');
 @import 'init';
-
 section {
     // min-height: 100vh;
     padding: 42px 0;
-
-    @media screen and (max-width:766px) {
+    @media screen and (max-width: 766px) {
         padding: 24px 0;
     }
 }
 
 $hijau: #e9e99b;
 $biru: #0074BF;
-
 .logonya {
     left: 5vw !important;
 }
 
 .banner {
-    padding: 0 !important;
+    // padding-top: 80px;
     position: relative;
     min-height: 100vh;
-    // overflow: hidden;
-
-    .hehe {
-        background: rgba(#000, .7);
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
-        left: 0;
-        right: 0;
-        // overflow: hidden;
-        top: 0;
-        bottom: 0;
-    }
-
+    padding: 0;
     .wraps {
-        display: block;
-        // background: rgba(#e2f3f9, .7);
-        width: 80vw;
-        // transform: translate();
-        margin: 0 auto;
-        height: 100vh;
-        position: absolute;
-        // transform: translate(15%, 0%);
-        left: 0vw;
+        position: relative;
     }
-
-    .bgbg {
-        // position: fixed;
-        // left: 0;
-        // top: 0;
-        // // filter: blur(3px);
-        // bottom: 0;
-        // right: 0;
-        // // overflow: hidden;
-        // width: 100%;
-        // height: 100%;
-
-        // img {
-        //     width: 100%;
-        //     height: 100%;
-        //     object-fit: cover;
-        // }
-        background-image: url("../img/cargo.jpg");
-
-        /* Set a specific height */
-        min-height: 100vh;
-
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .hape {
-        position: absolute;
-        left: 16px;
-        top: 32px;
-        width: 520px;
-        animation: MoveUpDown 2.3s linear infinite;
-        height: auto;
-
-        @media screen and (max-width:766px) {
-            width: 70vw;
-            top: 10vh;
+    // background-color: #000000;
+    h1 {
+        font-size: 80px;
+        @media screen and (max-width: 766px) {
+            font-size: 40px;
         }
-
+    }
+    &__img {
+        width: 100%;
+        height: 90vh !important;
+        margin: 0 !important;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+            height: 150px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
+        }
+        @media screen and (max-width: 766px) {
+            height: 80vh !important;
+        }
         img {
             width: 100%;
             height: 100%;
-            object-fit: contain;
+            object-fit: cover;
         }
     }
-
-    .hape2 {
+    &__text {
         position: absolute;
+        bottom: 56px;
         left: 16px;
-        bottom: -32px;
-        width: 520px;
-        height: auto;
-
-        @media screen and (max-width:766px) {
-            width: 70vw;
-            bottom: initial;
-            top: 17vh;
-        }
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-        }
-    }
-
-    @keyframes MoveUpDown {
-
-        0%,
-        100% {
-            left: 16px;
-        }
-
-        50% {
-            left: 32px;
-        }
-    }
-
-    .headline {
-        position: absolute;
-        // right: 10%;
-        top: 50vh;
-        width: 35%;
-        left: 5vw;
-
-        @media screen and (max-width:766px) {
-            transform: translate(0, 0);
-            width: 100%;
-            top: 50vh;
-        }
-
-        h1 {
-            font-size: 3.5rem;
-            margin-bottom: 0;
-            color: $biru;
-
-            @media screen and (max-width:766px) {
-                font-size: 3rem;
-            }
-        }
-
-        p {
-            color: white;
+        z-index: 48;
+        // background: red;
+        // font-weight: bold;
+        font-family: "Poppins";
+        color: $hijau;
+        font-weight: bold;
+        font-size: 52px;
+        @media screen and (max-width: 766px) {
+            font-size: 32px;
         }
     }
 }
 
 .aboutus {
     padding: 32px 0;
-
     h2 {
         color: $biru;
         font-size: 2rem;
     }
-
     .image {
         width: 100%;
         height: 320px;
         border-radius: 16px;
-
-        img,iframe {
+        img,
+        iframe {
             width: 100%;
             border-radius: 16px;
             height: 100%;
@@ -189,7 +101,7 @@ $biru: #0074BF;
         border-color: transparent;
         position: relative;
         height: 240px;
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             height: 360px;
         }
         .details {
@@ -211,7 +123,7 @@ $biru: #0074BF;
                 right: 32px;
                 bottom: 50px;
                 height: 92px;
-                @media screen and (max-width:766px) {
+                @media screen and (max-width: 766px) {
                     width: 42px;
                     height: 42px;
                 }
@@ -223,7 +135,6 @@ $biru: #0074BF;
                 }
             }
         }
-
     }
     .quote {
         font-family: "PT Serif";
@@ -233,64 +144,53 @@ $biru: #0074BF;
         position: absolute;
         left: 50%;
         top: 40%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         width: 85%;
     }
 }
 
 .usp {
-
     min-height: auto;
-
     .ceki {
         transition: .3s;
         cursor: pointer;
         padding: 8px;
         border-radius: 8px;
-
         &:hover {
             box-shadow: 2px 3px 6px #bbb;
             background: linear-gradient(to bottom, #fafafa, $hijau);
-
             // background: $hijau;
             h3 {
                 color: $biru;
                 font-weight: 700;
             }
-
             // padding: 8px;
         }
     }
-
     &-icon {
         width: 80%;
         margin: 0 auto;
         text-align: center;
         display: block;
-
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             width: 25%;
             margin: 0 auto;
             text-align: center;
             display: inline-block;
         }
-
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
     }
-
     &-text {
         text-align: center;
         // font-weight: 600;
         color: #222;
-
         h3 {
             margin: 4px 0 0;
         }
-
         @media screen and (max-width:766px) {
             display: inline-block;
             text-align: left;
@@ -298,7 +198,6 @@ $biru: #0074BF;
             vertical-align: top;
             margin: 0 0 8px 12px;
         }
-
         p {
             font-size: 14px;
         }
@@ -307,15 +206,12 @@ $biru: #0074BF;
 
 .function {
     background: #f7f7f7;
-
     position: relative;
     overflow: hidden;
     min-height: 80vh;
-
-    @media screen and (max-width:766px) {
+    @media screen and (max-width: 766px) {
         min-height: 100vh;
     }
-
     .wrap {
         display: block;
         background: #f7f7f7;
@@ -326,7 +222,6 @@ $biru: #0074BF;
         height: 100vh;
         position: absolute;
         transform: translate(15%, 0%);
-
         .hape {
             position: absolute;
             left: 16px;
@@ -334,43 +229,36 @@ $biru: #0074BF;
             width: 520px;
             // animation: MoveUpDown 2.3s linear infinite;
             height: auto;
-
-            @media screen and (max-width:766px) {
+            @media screen and (max-width: 766px) {
                 top: 32px;
                 width: 100%;
                 height: auto;
             }
-
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
             }
         }
-
         .caranya {
             position: absolute;
             right: 10%;
             top: 42px;
             width: 35%;
-
-            @media screen and (max-width:766px) {
+            @media screen and (max-width: 766px) {
                 width: 100%;
                 top: 45vh;
             }
-
             li {
                 font-weight: 200;
                 color: #222;
             }
-
             h2 {
                 font-size: 2rem;
                 margin-bottom: 0;
                 color: $biru;
                 margin-bottom: 16px;
-
-                @media screen and (max-width:766px) {
+                @media screen and (max-width: 766px) {
                     margin-bottom: 4px;
                     margin-top: 16px;
                     font-size: 1.75rem;
@@ -384,61 +272,49 @@ $biru: #0074BF;
     background: #f7f7f7;
     position: relative;
     height: 100vh;
-
-    @media screen and (max-width:766px) {
+    @media screen and (max-width: 766px) {
         height: auto;
     }
-
     &-bg {
         position: absolute;
         left: 0;
         top: 0;
         right: 0;
         bottom: 0;
-
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
-
     h2 {
         color: $biru;
         font-size: 2rem;
     }
-
     p {
         font-size: 32px;
-
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             font-size: 16px;
         }
     }
-
     .imagess {
         display: block;
         margin: 0 auto;
         text-align: center;
-
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             margin: 0;
             text-align: left;
         }
-
         .app {
             display: inline-block;
             width: 40%;
             transition: .3s;
-
             &:hover {
                 opacity: .7;
             }
-
             @media screen and(max-width:766px) {
                 width: 40%;
             }
-
             img {
                 width: 100%;
                 height: 100%;
@@ -446,11 +322,9 @@ $biru: #0074BF;
             }
         }
     }
-
     .hp {
         width: 100%;
         margin-top: 24px;
-
         img {
             width: 100%;
             height: 100%;
@@ -460,26 +334,19 @@ $biru: #0074BF;
 }
 
 .screenshoot {
-
-
-
     h2 {
         color: $biru;
         font-size: 2rem;
     }
-
     .autoplay {
         margin-top: 32px;
-
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             margin-top: 16px;
         }
     }
-
     .images {
         width: auto;
         height: 420px;
-
         img {
             width: 100%;
             height: 100%;
@@ -488,10 +355,8 @@ $biru: #0074BF;
     }
 }
 
-
 .static {
     padding: 32px 0;
-
     h2 {
         color: $biru;
         // transform: rotate(-3deg);
@@ -501,18 +366,15 @@ $biru: #0074BF;
         font-weight: bold;
         margin: 0 auto;
         padding: 8px 16px;
-
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             font-size: 1.7rem;
         }
     }
-
     .content {
         width: 860px;
         margin: 24px auto;
         color: white;
-
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             width: auto;
             margin: 8px 12px;
         }
