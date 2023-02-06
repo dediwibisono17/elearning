@@ -57,12 +57,14 @@ $biru: #0074BF;
         position: absolute;
         bottom: 56px;
         left: 16px;
+        width: 50%;
         z-index: 48;
         // background: red;
         // font-weight: bold;
         font-family: "Poppins";
         @media screen and (max-width: 766px) {
             font-size: 32px;
+            width: 100%;
         }
         h2 {
             color: $hijau;
@@ -73,7 +75,9 @@ $biru: #0074BF;
         }
         p {
             color: white;
-            font-size: .85rem;
+            @media screen and (max-width: 766px) {
+                font-size: .85rem;
+            }
         }
     }
 }
