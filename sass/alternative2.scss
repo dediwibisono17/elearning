@@ -391,3 +391,32 @@ header {
         }
     }
 }
+
+.slick {
+    &-next,
+    &-prev {
+        border: 2px solid rgba(255, 255, 255, .5);
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        &::before {
+            font-family: "FontAwesome" !important;
+            z-index: 99 !important;
+            color: #fff !important;
+        }
+    }
+    &-next {
+        right: 0 !important;
+        z-index: 9 !important;
+        &::before {
+            content: '\f054' !important;
+        }
+    }
+    &-prev {
+        left: 0 !important;
+        z-index: 9 !important;
+        &::before {
+            content: '\f053' !important;
+        }
+    }
+}

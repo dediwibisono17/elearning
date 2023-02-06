@@ -6,6 +6,7 @@ $('.wraps').slick({
     dots: true,
     infinite: false,
     speed: 300,
+    arrows: true,
     slidesToShow: 1,
     slidesToScroll: 1,
 
