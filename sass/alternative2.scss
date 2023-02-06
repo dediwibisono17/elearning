@@ -41,11 +41,11 @@ $biru: #0074BF;
             bottom: 0;
             right: 0;
             z-index: 1;
-            height: 150px;
+            height: 50%;
             background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
         }
         @media screen and (max-width: 766px) {
-            height: 80vh !important;
+            height: 100vh !important;
         }
         img {
             width: 100%;
@@ -61,11 +61,19 @@ $biru: #0074BF;
         // background: red;
         // font-weight: bold;
         font-family: "Poppins";
-        color: $hijau;
-        font-weight: bold;
-        font-size: 52px;
         @media screen and (max-width: 766px) {
             font-size: 32px;
+        }
+        h2 {
+            color: $hijau;
+            font-weight: bold;
+            font-size: 2.5rem;
+            margin: 0;
+            padding: 0;
+        }
+        p {
+            color: white;
+            font-size: .85rem;
         }
     }
 }
