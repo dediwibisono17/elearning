@@ -3,13 +3,12 @@ $(document).ready(function() {
 })
 
 $('.wraps').slick({
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 300,
     arrows: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-
 });
 
 $('.autoplay').slick({
