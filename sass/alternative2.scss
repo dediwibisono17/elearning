@@ -1,17 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=PT+Serif&family=Rubik&display=swap');
 @import 'init';
+
 section {
     // min-height: 100vh;
     padding: 42px 0;
+
     @media screen and (max-width: 766px) {
         padding: 24px 0;
+    }
+
+    p {
+        @media screen and (min-width:1400px) {
+            font-size: 1.3rem;
+        }
     }
 }
 
 $hijau: #e9e99b;
 $biru: #0074BF;
+
+.menu {
+    display: block;
+    margin-left: 200px;
+    margin-top: 16px;
+    li {
+        display: inline-block;
+        margin-left: 8px;
+        a {
+            color: white
+        }
+    }
+}
+
 .logonya {
     left: 5vw !important;
+}
+
+.atasx {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    z-index: 87;
+    .dl {
+        width: 320px;
+        margin-bottom: 8px;
+        @media screen and (max-width:766px) {
+            width: 120px;
+            display: inline-block;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
 }
 
 .banner {
@@ -19,21 +61,31 @@ $biru: #0074BF;
     position: relative;
     min-height: 100vh;
     padding: 0;
+
     .wraps {
         position: relative;
     }
+
     // background-color: #000000;
     h1 {
         font-size: 80px;
+
         @media screen and (max-width: 766px) {
             font-size: 40px;
         }
     }
+
+
     &__img {
         width: 100%;
         height: 100vh !important;
         margin: 0 !important;
         position: relative;
+        iframe {
+            z-index: 49;
+            position: relative;
+        }
+
         &::after {
             position: absolute;
             content: "";
@@ -44,39 +96,52 @@ $biru: #0074BF;
             height: 50%;
             background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
         }
+
         @media screen and (max-width: 766px) {
             height: 100vh !important;
         }
-        img {
+
+        img,iframe {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
+
     &__text {
         position: absolute;
         bottom: 56px;
-        left: 16px;
+        left: 5%;
         width: 50%;
         z-index: 48;
         // background: red;
         // font-weight: bold;
         font-family: "Poppins";
+
         @media screen and (max-width: 766px) {
             font-size: 32px;
-            width: 100%;
+            width: 80%;
         }
+
         h2 {
             color: $hijau;
             font-weight: bold;
             font-size: 2.5rem;
             margin: 0;
             padding: 0;
+            @media screen and (min-width: 1400px) {
+                font-size: 3.5rem;
+            }
         }
+
         p {
             color: white;
+
             @media screen and (max-width: 766px) {
                 font-size: .85rem;
+            }
+            @media screen and (min-width: 1400px) {
+                font-size: 1.5rem;
             }
         }
     }
@@ -84,14 +149,17 @@ $biru: #0074BF;
 
 .aboutus {
     padding: 32px 0;
+
     h2 {
         color: $biru;
         font-size: 2rem;
     }
+
     .image {
         width: 100%;
         height: 320px;
         border-radius: 16px;
+
         img,
         iframe {
             width: 100%;
@@ -107,27 +175,33 @@ $biru: #0074BF;
         color: $biru;
         font-size: 2rem;
     }
+
     .card {
         padding: 8px;
         background: #f4f4f4;
         border-color: transparent;
         position: relative;
         height: 240px;
+
         @media screen and (max-width: 766px) {
             height: 360px;
         }
+
         .details {
             position: absolute;
             bottom: 8px;
             right: 8px;
+
             .name {
                 font-size: 16px;
                 font-weight: bold;
                 text-align: right;
             }
+
             small {
                 text-align: right;
             }
+
             .img {
                 width: 92px;
                 position: absolute;
@@ -135,10 +209,12 @@ $biru: #0074BF;
                 right: 32px;
                 bottom: 50px;
                 height: 92px;
+
                 @media screen and (max-width: 766px) {
                     width: 42px;
                     height: 42px;
                 }
+
                 img {
                     width: 100%;
                     height: 100%;
@@ -148,6 +224,7 @@ $biru: #0074BF;
             }
         }
     }
+
     .quote {
         font-family: "PT Serif";
         font-size: 1.5rem;
@@ -163,46 +240,56 @@ $biru: #0074BF;
 
 .usp {
     min-height: auto;
+
     .ceki {
         transition: .3s;
         cursor: pointer;
         padding: 8px;
         border-radius: 8px;
+
         &:hover {
             box-shadow: 2px 3px 6px #bbb;
             background: linear-gradient(to bottom, #fafafa, $hijau);
+
             // background: $hijau;
             h3 {
                 color: $biru;
                 font-weight: 700;
             }
+
             // padding: 8px;
         }
     }
+
     &-icon {
         width: 80%;
         margin: 0 auto;
         text-align: center;
         display: block;
+
         @media screen and (max-width: 766px) {
             width: 25%;
             margin: 0 auto;
             text-align: center;
             display: inline-block;
         }
+
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
     }
+
     &-text {
         text-align: center;
         // font-weight: 600;
         color: #222;
+
         h3 {
             margin: 4px 0 0;
         }
+
         @media screen and (max-width:766px) {
             display: inline-block;
             text-align: left;
@@ -210,8 +297,12 @@ $biru: #0074BF;
             vertical-align: top;
             margin: 0 0 8px 12px;
         }
+
         p {
             font-size: 14px;
+            @media screen and (min-width:1440px) {
+                font-size: 1rem;
+            }
         }
     }
 }
@@ -221,9 +312,11 @@ $biru: #0074BF;
     position: relative;
     overflow: hidden;
     min-height: 80vh;
+
     @media screen and (max-width: 766px) {
         min-height: 100vh;
     }
+
     .wrap {
         display: block;
         background: #f7f7f7;
@@ -234,6 +327,7 @@ $biru: #0074BF;
         height: 100vh;
         position: absolute;
         transform: translate(15%, 0%);
+
         .hape {
             position: absolute;
             left: 16px;
@@ -241,35 +335,42 @@ $biru: #0074BF;
             width: 520px;
             // animation: MoveUpDown 2.3s linear infinite;
             height: auto;
+
             @media screen and (max-width: 766px) {
                 top: 32px;
                 width: 100%;
                 height: auto;
             }
+
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
             }
         }
+
         .caranya {
             position: absolute;
             right: 10%;
             top: 42px;
             width: 35%;
+
             @media screen and (max-width: 766px) {
                 width: 100%;
                 top: 45vh;
             }
+
             li {
                 font-weight: 200;
                 color: #222;
             }
+
             h2 {
                 font-size: 2rem;
                 margin-bottom: 0;
                 color: $biru;
                 margin-bottom: 16px;
+
                 @media screen and (max-width: 766px) {
                     margin-bottom: 4px;
                     margin-top: 16px;
@@ -283,50 +384,63 @@ $biru: #0074BF;
 .download {
     background: #f7f7f7;
     position: relative;
-    height: 100vh;
+    // height: 80vh;
+    // overflow: hidden;
+
     @media screen and (max-width: 766px) {
         height: auto;
     }
+
     &-bg {
         position: absolute;
         left: 0;
         top: 0;
         right: 0;
         bottom: 0;
+
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
+
     h2 {
         color: $biru;
         font-size: 2rem;
     }
+
     p {
         font-size: 32px;
+
         @media screen and (max-width: 766px) {
             font-size: 16px;
         }
     }
+
     .imagess {
         display: block;
         margin: 0 auto;
         text-align: center;
+
         @media screen and (max-width: 766px) {
             margin: 0;
             text-align: left;
         }
+
         .app {
             display: inline-block;
             width: 40%;
             transition: .3s;
+
             &:hover {
                 opacity: .7;
             }
+
             @media screen and(max-width:766px) {
                 width: 40%;
             }
+
             img {
                 width: 100%;
                 height: 100%;
@@ -334,9 +448,11 @@ $biru: #0074BF;
             }
         }
     }
+
     .hp {
         width: 100%;
         margin-top: 24px;
+
         img {
             width: 100%;
             height: 100%;
@@ -350,15 +466,19 @@ $biru: #0074BF;
         color: $biru;
         font-size: 2rem;
     }
+
     .autoplay {
         margin-top: 32px;
+
         @media screen and (max-width: 766px) {
             margin-top: 16px;
         }
     }
+
     .images {
         width: auto;
         height: 420px;
+
         img {
             width: 100%;
             height: 100%;
@@ -368,7 +488,8 @@ $biru: #0074BF;
 }
 
 .static {
-    padding: 32px 0;
+    padding: 72px 0 32px;
+
     h2 {
         color: $biru;
         // transform: rotate(-3deg);
@@ -378,14 +499,17 @@ $biru: #0074BF;
         font-weight: bold;
         margin: 0 auto;
         padding: 8px 16px;
+
         @media screen and (max-width: 766px) {
             font-size: 1.7rem;
         }
     }
+
     .content {
         width: 860px;
         margin: 24px auto;
         color: white;
+
         @media screen and (max-width: 766px) {
             width: auto;
             margin: 8px 12px;
@@ -395,7 +519,12 @@ $biru: #0074BF;
 
 header {
     .image {
-        width: 200px;
+        width: 150px;
+
+        @media screen {
+            width: 130px;
+        }
+
         img {
             width: 100%;
             height: 100%;
@@ -405,30 +534,40 @@ header {
 }
 
 .slick {
+
     &-next,
     &-prev {
         border: 2px solid rgba(255, 255, 255, .5);
-        width: 42px;
-        height: 42px;
+        width: 42px !important;
+        height: 42px !important;
+        background: $biru !important;
         border-radius: 50%;
+        @media screen and (max-width:766px) {
+            top: 30%;
+        }
+
         &::before {
             font-family: "FontAwesome" !important;
             z-index: 99 !important;
             color: #fff !important;
         }
     }
+
     &-next {
         right: 0 !important;
         z-index: 9 !important;
+
         &::before {
-            content: '\f054' !important;
+            content: "\f054" !important;
         }
     }
+
     &-prev {
         left: 0 !important;
         z-index: 9 !important;
+
         &::before {
-            content: '\f053' !important;
+            content: "\f053" !important;
         }
     }
 }

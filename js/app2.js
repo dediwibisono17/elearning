@@ -4,9 +4,11 @@ $(document).ready(function() {
 
 $('.wraps').slick({
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 300,
     arrows: true,
+    fade:true,
+    // autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
 });
@@ -52,4 +54,12 @@ $(".toapp").click(function() {
     $('html, body').animate({
         scrollTop: $(".download").offset().top
     }, 500);
+});
+
+$('ul.menu').find('a').click(function(){
+    var $href = $(this).attr('href');
+    // alert($href)
+    var $anchor = $($href).offset();
+    $('body,html').animate({ scrollTop: $anchor.top -40 },200);
+    // return false;
 });
