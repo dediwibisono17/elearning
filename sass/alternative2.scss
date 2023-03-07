@@ -19,13 +19,25 @@ section {
 $hijau: #e9e99b;
 $biru: #0074BF;
 
+.active {
+    color: $hijau !important;
+}
+
 .menu {
     display: block;
-    margin-left: 200px;
+    /* margin-left: 200px; */
     margin-top: 16px;
+    float: right;
+    margin-right: 150px;
+
+    @media screen and (max-width:766px) {
+        display: none;
+    }
+
     li {
         display: inline-block;
         margin-left: 8px;
+
         a {
             color: white
         }
@@ -41,13 +53,16 @@ $biru: #0074BF;
     bottom: 16px;
     right: 16px;
     z-index: 87;
+
     .dl {
         width: 320px;
         margin-bottom: 8px;
+
         @media screen and (max-width:766px) {
             width: 120px;
             display: inline-block;
         }
+
         img {
             width: 100%;
             height: 100%;
@@ -81,6 +96,7 @@ $biru: #0074BF;
         height: 100vh !important;
         margin: 0 !important;
         position: relative;
+
         iframe {
             z-index: 49;
             position: relative;
@@ -101,7 +117,8 @@ $biru: #0074BF;
             height: 100vh !important;
         }
 
-        img,iframe {
+        img,
+        iframe {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -129,6 +146,7 @@ $biru: #0074BF;
             font-size: 2.5rem;
             margin: 0;
             padding: 0;
+
             @media screen and (min-width: 1400px) {
                 font-size: 3.5rem;
             }
@@ -140,6 +158,7 @@ $biru: #0074BF;
             @media screen and (max-width: 766px) {
                 font-size: .85rem;
             }
+
             @media screen and (min-width: 1400px) {
                 font-size: 1.5rem;
             }
@@ -300,6 +319,7 @@ $biru: #0074BF;
 
         p {
             font-size: 14px;
+
             @media screen and (min-width:1440px) {
                 font-size: 1rem;
             }
@@ -508,7 +528,7 @@ $biru: #0074BF;
     .content {
         width: 860px;
         margin: 24px auto;
-        color: white;
+        // color: white;
 
         @media screen and (max-width: 766px) {
             width: auto;
@@ -521,8 +541,11 @@ header {
     .image {
         width: 150px;
 
-        @media screen {
-            width: 130px;
+        @media screen and(max-width:766px) {
+            width: 84px;
+            position: relative;
+            /* top: 8px; */
+            margin: 8px auto;
         }
 
         img {
@@ -542,6 +565,7 @@ header {
         height: 42px !important;
         background: $biru !important;
         border-radius: 50%;
+
         @media screen and (max-width:766px) {
             top: 30%;
         }
